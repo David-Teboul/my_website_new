@@ -1,5 +1,5 @@
 # Site settings
-baseURL = "https://david-teboul.netlify.app/"
+baseURL = "https://davidteboul.netlify.app/"
 languageCode = "en-us"
 title = "David's Portfolio"
 theme = "forty"
@@ -81,7 +81,7 @@ disqusShortname = ""
   [params.banner]
     # To change the background image on the homepage banner, replace 'banner.jpg' in
     # the 'static/img' folder.
-    title = "Hi my name is David Teboul and here is my portfolio"
+    title = "Vive l'Esperance Sportive de Tunis"
     subtitle = "French and American student at London Business School reading for the Masters in Financial Analysis programme. Currently actively looking for a Summer Internship in Asset Management or Advisory"
     buttonText = "Learn more about me"
 
