@@ -81,7 +81,7 @@ disqusShortname = ""
   [params.banner]
     # To change the background image on the homepage banner, replace 'banner.jpg' in
     # the 'static/img' folder.
-    title = "Vive l'Esperance Sportive de Tunis"
+    title = "David's Portfolio"
     subtitle = "French and American student at London Business School reading for the Masters in Financial Analysis programme. Currently actively looking for a Summer Internship in Asset Management or Advisory"
     buttonText = "Learn more about me"
 
