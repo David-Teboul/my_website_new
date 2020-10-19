@@ -162,7 +162,7 @@ disqusShortname = ""
 
     [[params.contact.address]]
     title = "Address"
-    street = "365 Euston Road"
+    street = "London Business School, Regents Park"
     city = "London, NW1 3AR"
     country = "England"
 
