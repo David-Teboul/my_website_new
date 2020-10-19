@@ -101,7 +101,7 @@ disqusShortname = ""
       title = "Being a Summer Analyst in NYC"
       subtitle = "Interned in Quantitative Risk Managment at Transatlantique Private Wealth"
       image = "pic05.jpg"
-      url = "blogs/ipsum"
+      url = "blogs/David"
 
     [[params.tiles.showcase]]
       title = "Completing my academic journey at LBS"
