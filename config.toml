@@ -51,30 +51,12 @@ disqusShortname = ""
       name = "My CV"
       url = "blogs/MyCV.pdf"
 
-    [[params.navigation.links]]
-      name = "Generic Blog"
-      url = "blogs/ipsum"
-
-    [[params.navigation.links]]
-      name = "Elements"
-      url = "elements.html"
-
     # Add custom links here by uncommenting code below. To remove links just delete
     # the [[params.navigation.links]] map associated with that link. Copy and paste
     # code below if you need more links. Buttons work in the same way.
     # [[params.navigation.links]]
     #    name = "NameOfLink"
     #    url = "UrlOfLink"
-
-    # Button Style 1
-    [[params.navigation.button1]]
-      name = "Get Started"
-      url = "blogs"
-
-    # Button Style 2
-    [[params.navigation.button2]]
-      name = "Log In"
-      url = "#"
 
 
   # Banner section
@@ -187,35 +169,15 @@ disqusShortname = ""
   # Footer section
   [params.footer]
     enable = true
-    copyright = "Company Name"
+    copyright = "David Teboul"
 
     # Uses font awesome icons
     [[params.footer.social]]
-      icon = "fa-twitter"
-      url= "https://www.twitter.com"
-      label = "Twitter"
-
-    [[params.footer.social]]
-      icon = "fa-facebook"
-      url= "https://www.facebook.com"
-      label = "Facebook"
-
-    [[params.footer.social]]
-      icon = "fa-instagram"
-      url= "https://www.instagram.com"
-      label = "Instagram"
-    
-    [[params.footer.social]]
       icon = "fa-github"
-      url= "https://www.github.com"
+      url= "https://github.com/David-Teboul"
       label = "GitHub"
 
     [[params.footer.social]]
       icon = "fa-linkedin"
-      url= "https://www.linkedin.com"
+      url= "https://www.linkedin.com/in/david-teboul/
       label = "LinkedIn"
-
-    [[params.footer.quicklinks]]
-      text = "Design: "
-      url= "https://www.html5up.net"
-      alt = "HTML5 UP"
