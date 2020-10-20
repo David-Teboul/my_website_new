@@ -73,21 +73,15 @@ disqusShortname = ""
     enable = true
     # Display your showcases here.
     [[params.tiles.showcase]]
-      title = "Completing my academic journey at LBS"
-      subtitle = "Reading for the Masters in Financial Analysis Programme"
-      image = "pic06.jpg"
-      url = "blogs/ipsum"    
-    
-    [[params.tiles.showcase]]
       title = "What happens when the yield curve inverts?"
       subtitle = "Using historical data to analyse the impacts on the economy when the yield curve inverts"
-      image = "pic01.jpg"
+      image = "yield.jpg"
       url = "blogs/Inversion"
 
     [[params.tiles.showcase]]
       title = "Fancy a trip to Brussels during the reading week?"
       subtitle = "I will forecast the cost for a 4-day trip in Brussels for 2 people thanks to regression analyses"
-      image = "pic02.jpg"
+      image = "bruxelles_GP.jpg"
       url = "blogs/Brussels"
 
 [[params.tiles.showcase]]
@@ -99,11 +93,11 @@ disqusShortname = ""
     [[params.tiles.showcase]]
      title = "Has the payment gap closed?"
       subtitle = "Using data from Omega Plc. I will explore if wage discrimination still exists in 2020."
-      image = "pic03.jpg"
+      image = "gap.jpg"
       url = "blogs/Gap"
 
     [[params.tiles.showcase]]
-      title = "Completing my academic journey at LBS"
+      title = "How did COVID impact bike rentals"
       subtitle = "Reading for the Masters in Financial Analysis Programme"
       image = "pic06.jpg"
       url = "blogs/ipsum"
