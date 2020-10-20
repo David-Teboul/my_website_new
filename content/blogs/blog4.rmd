@@ -25,17 +25,23 @@ knitr::opts_chunk$set(
 ```
 
 
-```{r load-libraries, include=FALSE}
-library(tidyverse)
+```{r load-libraries, echo=FALSE}
+
+ # Load ggplot2, dplyr, and all the other tidyverse packages
+library(tidyverse) 
 library(mosaic)
 library(ggthemes)
-library(lubridate)
+library(GGally)
+library(readxl)
 library(here)
 library(skimr)
 library(janitor)
-library(httr)
-library(readxl)
-library(vroom)
+library(broom)
+library(tidyquant)
+library(infer)
+library(openintro)
+library(tidyquant)
+
 ```
 
 
@@ -233,4 +239,4 @@ omega %>%
 
 ```
 
-> The plot illustrates the relationship between experience and salary. The scatterplot as well as the correlation of 0.803 shows a strong and positive relationship between salary and experience. This correlation is higher for female, with a correlation of 0.812, and smaller for male, with a correlation of 0.661. Since the mean experience for male is higher than the mean experience for female, the mean salary for male is also higher than the mean salary for female.
+> The plot illustrates the relationship between experience and salary. The scatterplot as well as the correlation of 0.803 shows a strong and positive relationship between salary and experience. This correlation is higher for female, with a correlation of 0.812, and smaller for male, with a correlation of 0.661. Since the mean experience for male is higher than the mean experience for female, the mean salary for male is also higher than the mean salary for female. 
