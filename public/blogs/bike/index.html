@@ -8,7 +8,7 @@
 	
 	<meta name="author" content="David Teboul">
 	<meta name="generator" content="Hugo 0.75.1" />
-	<title>Ipsum &middot; David&#39;s Portfolio</title>
+	<title>Analysing Tfl bike data, in the city of London &middot; David&#39;s Portfolio</title>
 	<!-- Stylesheets -->
 	
 	<link rel="stylesheet" href="/css/main.css"/>
@@ -69,7 +69,7 @@
                     <section id="one">
                         <div class="inner">
                             <header class="major">
-                                <h1>Ipsum</h1>
+                                <h1>Analysing Tfl bike data, in the city of London</h1>
                             </header>
                             
                                 <span class="image main"><img src="/img/blogs/pic10.jpg" alt="" /></span>
@@ -77,7 +77,28 @@
                             
 
 
-<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna. Maecenas massa sed magna lacinia magna pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis tempus.</p>
+<pre class="r"><code>url &lt;- &quot;https://data.london.gov.uk/download/number-bicycle-hires/ac29363e-e0cb-47cc-a97a-e216d900a6b0/tfl-daily-cycle-hires.xlsx&quot;
+
+# Download TFL data to temporary file
+httr::GET(url, write_disk(bike.temp &lt;- tempfile(fileext = &quot;.xlsx&quot;)))</code></pre>
+<pre><code>## Response [https://airdrive-secure.s3-eu-west-1.amazonaws.com/london/dataset/number-bicycle-hires/2020-09-18T09%3A06%3A54/tfl-daily-cycle-hires.xlsx?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAJJDIMAIVZJDICKHA%2F20201020%2Feu-west-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20201020T181341Z&amp;X-Amz-Expires=300&amp;X-Amz-Signature=8e9719197764fdb94ef7b825e5d37188815d6c359f9a54309f0eab89c5c0ca77&amp;X-Amz-SignedHeaders=host]
+##   Date: 2020-10-20 18:13
+##   Status: 200
+##   Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+##   Size: 165 kB
+## &lt;ON DISK&gt;  /var/folders/5g/7dckln0j6rs6fssyrc4qqg3r0000gn/T//RtmpjhkGpm/file50bc4e47df8d.xlsx</code></pre>
+<pre class="r"><code># Use read_excel to read it as dataframe
+bike0 &lt;- read_excel(bike.temp,
+                   sheet = &quot;Data&quot;,
+                   range = cell_cols(&quot;A:B&quot;))
+
+# change dates to get year, month, and week
+bike &lt;- bike0 %&gt;% 
+  clean_names() %&gt;% 
+  rename (bikes_hired = number_of_bicycle_hires) %&gt;% 
+  mutate (year = year(day),
+          month = lubridate::month(day, label = TRUE),
+          week = isoweek(day))</code></pre>
 
                         </div>
                     </section>
