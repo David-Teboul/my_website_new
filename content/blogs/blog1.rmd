@@ -100,6 +100,7 @@ tidyweather %>%
        x = "Month",
        y = "Temperature Change")
 ```
+
 >Months seem to share similar weather anomalies. However, it is also apparent that the winter months, such as December, January & February tend to be more random in terms of temperature deviation than summer months.
 
 ## The most recent time period shows the largest temperature deviations ever.
