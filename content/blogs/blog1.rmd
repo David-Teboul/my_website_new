@@ -28,7 +28,7 @@ knitr::opts_chunk$set(
 
 # Climate change is real
 
-```{r load-libraries, warning=FALSE,message=False,echo=FALSE}
+```{r load-libraries, warning=FALSE, message=FALSE, echo=FALSE}
  # Load ggplot2, dplyr, and all the other tidyverse packages
 library(tidyverse) 
 library(mosaic)

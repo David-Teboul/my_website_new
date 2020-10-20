@@ -98,9 +98,9 @@ disqusShortname = ""
       url = "blogs/ipsum"
 
     [[params.tiles.showcase]]
-      title = "Climate change is real!!!"
-      subtitle = ""
-      image = "pic05.jpg"
+      title = "Climate change is real!"
+      subtitle = "Let us prove it through hypothesis testing"
+      image = "image_climate.jpg"
       url = "blogs/David"
 
     [[params.tiles.showcase]]
