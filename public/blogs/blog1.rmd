@@ -10,5 +10,60 @@ keywords: ""
 slug: David
 title: Being a Summer Analyst in NYC
 ---
+# Climate change is real!!
 
-Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna. Maecenas massa sed magna lacinia magna pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis tempus.
+```{r load-libraries, echo=FALSE}
+ # Load ggplot2, dplyr, and all the other tidyverse packages
+library(tidyverse) 
+library(mosaic)
+library(ggthemes)
+library(GGally)
+library(readxl)
+library(here)
+library(skimr)
+library(janitor)
+library(broom)
+library(tidyquant)
+library(infer)
+library(openintro)
+library(tidyquant)
+```
+
+```{r}
+weather <- 
+  read_csv("https://data.giss.nasa.gov/gistemp/tabledata_v3/NH.Ts+dSST.csv", 
+           skip = 1, 
+           na = "***")
+
+skim(weather)
+```
+
+```{r}
+tidyweather <- weather %>%
+  select(1:13)%>%
+  pivot_longer(cols=2:13, 
+               names_to="Month", 
+               values_to = "delta")
+
+skim(tidyweather)
+```
+
+## Increase in Weather Anomalies over time
+```{r}
+tidyweather <- tidyweather %>%
+  mutate(date = ymd(paste(as.character(Year), Month, "1")),
+         month = month(date, label=TRUE),
+         year = year(date))
+
+ggplot(tidyweather, aes(x=date, y = delta))+
+  geom_point()+
+  geom_smooth(color="red") +
+  theme_bw() +
+  labs (
+    title = "Weather Anomalies have increased over time", 
+    x = "Year", 
+    y = "Temperature Change"
+  )
+```
+
+>The overall trend indicates that there is an increased level of temperature/weather anomaly over time. The increased greenhouse gases in the atmosphere could be the reason for such increased deviations.

@@ -64,7 +64,7 @@ disqusShortname = ""
     # To change the background image on the homepage banner, replace 'banner.jpg' in
     # the 'static/img' folder.
     title = "David's Portfolio"
-    subtitle = "French and American student at London Business School reading for the Masters in Financial Analysis programme. Currently actively looking for a Summer Internship in Asset Management or Advisory"
+    subtitle = "French and American student at London Business School reading for the Masters in Financial Analysis programme. Currently actively looking for a Summer Internship in Global Capital Markets or Advisory"
     buttonText = "Learn more about me"
 
 
@@ -98,8 +98,8 @@ disqusShortname = ""
       url = "blogs/ipsum"
 
     [[params.tiles.showcase]]
-      title = "Being a Summer Analyst in NYC"
-      subtitle = "Interned in Quantitative Risk Managment at Transatlantique Private Wealth"
+      title = "Climate change is real!!!"
+      subtitle = ""
       image = "pic05.jpg"
       url = "blogs/David"
 
