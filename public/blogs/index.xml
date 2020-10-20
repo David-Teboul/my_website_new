@@ -17,21 +17,21 @@
     </item>
     
     <item>
-      <title>Tempus</title>
-      <link>/blogs/tempus/</link>
+      <title>Fancy a trip to Brussels during the reading week?</title>
+      <link>/blogs/brussels/</link>
       <pubDate>Tue, 31 Oct 2017 22:26:13 -0500</pubDate>
       
-      <guid>/blogs/tempus/</guid>
+      <guid>/blogs/brussels/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Magna</title>
-      <link>/blogs/magna/</link>
+      <title>What happens when the yield curve inverts?</title>
+      <link>/blogs/inversion/</link>
       <pubDate>Tue, 31 Oct 2017 22:26:09 -0500</pubDate>
       
-      <guid>/blogs/magna/</guid>
-      <description></description>
+      <guid>/blogs/inversion/</guid>
+      <description>Every so often, we hear warnings from commentators on the “inverted yield curve” and its predictive power with respect to recessions. In our case we will look at US data and use the FRED database to download historical yield curve rates, and plot the yield curves since 1999 to see when the yield curves flatten. If you want to know more, a very nice article that explains the yield curve is and its inversion can be found here: https://fredblog.</description>
     </item>
     
     <item>

@@ -74,34 +74,28 @@ disqusShortname = ""
     # Display your showcases here.
     
     [[params.tiles.showcase]]
-      title = "Growing Up"
-      subtitle = "A life alternating between the USA and France"
+      title = "What happens when the yield curve inverts?"
+      subtitle = "Using historical data to analyse the impacts on the economy when the yield curve inverts"
       image = "pic01.jpg"
-      url = "blogs/aliquam"
+      url = "blogs/Inversion"
 
     [[params.tiles.showcase]]
-      title = "Treasurer of the Jewish Society"
-      subtitle = "Balancing academic & social life with responsibility roles"
+      title = "Fancy a trip to Brussels during the reading week?"
+      subtitle = "I will forecast the cost for a 4-day trip in Brussels for 2 people thanks to regression analyses"
       image = "pic02.jpg"
-      url = "blogs/tempus"
+      url = "blogs/Brussels"
 
-    [[params.tiles.showcase]]
-      title = "First experience in Portfolio Management"
-      subtitle = "What I accomplished during my summer internship at Banque Transatlantique in Paris"
-      image = "pic03.jpg"
-      url = "blogs/magna"
-
-    [[params.tiles.showcase]]
-      title = "Portfolio Manager at SOBIC"
-      subtitle = ""
-      image = "pic04.jpg"
-      url = "blogs/ipsum"
-
-    [[params.tiles.showcase]]
+[[params.tiles.showcase]]
       title = "Climate change is real!"
       subtitle = "Let us prove it through hypothesis testing"
       image = "image_climate.jpg"
-      url = "blogs/David"
+      url = "blogs/Climate"
+
+    [[params.tiles.showcase]]
+     title = "Has the payment gap closed?"
+      subtitle = "Using data from Omega Plc. I will explore if wage discrimination still exists in 2020."
+      image = "pic03.jpg"
+      url = "blogs/Gap"
 
     [[params.tiles.showcase]]
       title = "Completing my academic journey at LBS"
@@ -120,7 +114,7 @@ disqusShortname = ""
   # Section Type Two
   [params.two]
     enable = true
-    title = "Massa libero"
+    title = "More about me"
     subtitle = """Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. 
     Mauris aliquet magna magna sed nunc rhoncus pharetra. 
     Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. 
@@ -181,8 +175,3 @@ disqusShortname = ""
       icon = "fa-linkedin"
       url= "https://www.linkedin.com/in/david-teboul/"
       label = "LinkedIn"
-
-    [[params.footer.quicklinks]]
-      text = "Design: "
-      url= "https://www.html5up.net"
-      alt = "HTML5 UP"
