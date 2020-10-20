@@ -22,7 +22,7 @@
       <pubDate>Tue, 31 Oct 2017 22:26:13 -0500</pubDate>
       
       <guid>/blogs/brussels/</guid>
-      <description></description>
+      <description>#Editing the styles of the RMD file. #TOC { position: fixed; left: 30px; width: 440px; max-width:100%; overflow:auto; } #Styles of Titles h1.title{ color: black; } h1 { color: #FF5A5F; } h2 { color: black; }  $(&#34;.colored  h1&#34;).wrapInner(&#39;&#39;)  Welcome to our Airbnb Study! The aim of this report is to model the costs for 2 people staying in an Airbnb in Brussels for 4 nights.</description>
     </item>
     
     <item>

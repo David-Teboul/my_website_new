@@ -72,6 +72,11 @@ disqusShortname = ""
   [params.tiles]
     enable = true
     # Display your showcases here.
+    [[params.tiles.showcase]]
+      title = "Completing my academic journey at LBS"
+      subtitle = "Reading for the Masters in Financial Analysis Programme"
+      image = "pic06.jpg"
+      url = "blogs/ipsum"    
     
     [[params.tiles.showcase]]
       title = "What happens when the yield curve inverts?"
