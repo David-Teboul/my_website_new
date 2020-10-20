@@ -72,6 +72,12 @@ disqusShortname = ""
   [params.tiles]
     enable = true
     # Display your showcases here.
+     [[params.tiles.showcase]]
+      title = "Who am I?"
+      subtitle = "From me growing up to now"
+      image = "David_Teboul_copy.jpg"
+      url = "blogs/CV"
+    
     [[params.tiles.showcase]]
       title = "What happens when the yield curve inverts?"
       subtitle = "Using historical data to analyse the impacts on the economy when the yield curve inverts"
