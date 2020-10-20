@@ -77,7 +77,7 @@
                             
 
 
-<p>Having been to Lodond frequently for 3 years and settling there I have witnessed the overall change in trend of the demand for the Tfl bikes. I initially, lived the most drastic change (considered at the time) from tje blue Barclays to the red Santander. More recently, I had the feeling that there were less bikes at the stations, so when I had the opportunity to analyze the actual database I was delighted, and here below is my analysis.</p>
+<p>Having been to Lodond frequently for 3 years and settling there I have witnessed the overall change in trend of the demand for the Tfl bikes. I initially, lived the most drastic change (considered at the time) from the blue Barclays to the red Santander. More recently, I had the feeling that there were less bikes at the stations, so when I had the opportunity to analyze the actual database I was delighted, and here below is my analysis.</p>
 <pre class="r"><code>url &lt;- &quot;https://data.london.gov.uk/download/number-bicycle-hires/ac29363e-e0cb-47cc-a97a-e216d900a6b0/tfl-daily-cycle-hires.xlsx&quot;
 
 # Download TFL data to temporary file
@@ -339,43 +339,8 @@ plot_weekly_difference &lt;- weekly_difference %&gt;%
         strip.text = element_text(size=10), plot.margin = margin(0.5,0.5,0.5,0.5, &quot;cm&quot;))+
   facet_wrap(~year)
 
-plot_weekly_difference#We define weekly_diff_percent as Y for logical statements</code></pre>
-<p><img src="/blogs/blog5_files/figure-html/unnamed-chunk-9-1.png" width="648" style="display: block; margin: auto;" /></p>
-<pre class="r"><code>diff_percent &lt;- weekly_difference$weekly_diff_percent
-
-#Here we visualize the planned comparison
-plot_weekly_difference &lt;- weekly_difference %&gt;%
-  ggplot(aes(x=week,y=weekly_diff_percent,group=1))+
-  
-#Adding the grey background for quarter 2 and quarter 4 
-  geom_rect(mapping=aes(xmin = 13, xmax = 26, ymin = -Inf, ymax = Inf),fill=&quot;#EDEDED&quot;,alpha=0.09)+
-  geom_rect(mapping=aes(xmin = 39, xmax = 53, ymin = -Inf, ymax = Inf),fill=&quot;#EDEDED&quot;,alpha=0.09)+
-#plotting the dataset  
-  geom_line()+
-  geom_ribbon(aes(ymin = pmin(weekly_diff_percent,0), 
-                  ymax = 0), 
-                  fill = alpha(&quot;tomato&quot;,0.2)) +
-  geom_ribbon(aes(ymin = 0, 
-                  ymax = pmax(weekly_diff_percent,0)), 
-                  fill = alpha(&quot;green&quot;,0.2))+
-#Here we need to make sure the colors change based on the color of the ribbon
-  geom_rug(sides=&quot;b&quot;,
-           colour=ifelse(diff_percent&gt;0,&quot;green&quot;,&quot;red&quot;))+
-  theme_minimal()+
-  scale_y_continuous(labels = function(x) paste0(x*100, &quot;%&quot;))+
-  scale_x_continuous(breaks=c(13,26,39,53))+
-    labs(title = &quot;Weekly Tfl Bike Travel significantly impacted by COVID Restrictions&quot;,
-       subtitle = &quot;Percentage change from weekly averages calculated between 2015 and 2019&quot;,
-       caption = &quot;Source: Tfl, London Data Store&quot;,
-       x= &quot;week&quot;, y = &quot;&quot;)+
-  theme(legend.position =&quot;none&quot;,title = element_text(size=12),
-        axis.title = element_text(size=12),
-        axis.text = element_text(size = 10), 
-        strip.text = element_text(size=10), plot.margin = margin(0.5,0.5,0.5,0.5, &quot;cm&quot;))+
-  facet_wrap(~year)
-
 plot_weekly_difference</code></pre>
-<p><img src="/blogs/blog5_files/figure-html/unnamed-chunk-9-2.png" width="648" style="display: block; margin: auto;" />
+<p><img src="/blogs/blog5_files/figure-html/unnamed-chunk-9-1.png" width="648" style="display: block; margin: auto;" />
 &gt;Based on the two graphs above, we can observe that monthly and weekly activity can vary significantly from the average. Hence, given this strong variation, the Median would be a better metric to calculate expected rentals.</p>
 
                         </div>

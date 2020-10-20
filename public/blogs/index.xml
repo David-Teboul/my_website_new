@@ -40,7 +40,7 @@
       <pubDate>Tue, 31 Oct 2017 21:28:43 -0500</pubDate>
       
       <guid>/blogs/bike/</guid>
-      <description>Having been to Lodond frequently for 3 years and settling there I have witnessed the overall change in trend of the demand for the Tfl bikes. I initially, lived the most drastic change (considered at the time) from tje blue Barclays to the red Santander. More recently, I had the feeling that there were less bikes at the stations, so when I had the opportunity to analyze the actual database I was delighted, and here below is my analysis.</description>
+      <description>Having been to Lodond frequently for 3 years and settling there I have witnessed the overall change in trend of the demand for the Tfl bikes. I initially, lived the most drastic change (considered at the time) from the blue Barclays to the red Santander. More recently, I had the feeling that there were less bikes at the stations, so when I had the opportunity to analyze the actual database I was delighted, and here below is my analysis.</description>
     </item>
     
     <item>
@@ -49,7 +49,7 @@
       <pubDate>Tue, 31 Oct 2017 21:28:43 -0500</pubDate>
       
       <guid>/blogs/climate/</guid>
-      <description>Climate change is real Lobbies play a crucial role in political campaigns. As a result political candidates and the media paint a biased view on the matter of global warming. As a result the general, uninformed public generate their opinions on misinformation. For this reason, I wanted to reestablish the truth by proving that global warming is an actual current issue.
+      <description>Climate change is real Lobbies play a crucial role in political campaigns. As a result some political candidates and the media paint a biased view on the matter of global warming. As a result the general, uninformed public generate their opinions on misinformation. For this reason, I wanted to reestablish the truth by proving that global warming is an actual current issue.
 weather &amp;lt;- read_csv(&amp;quot;https://data.giss.nasa.gov/gistemp/tabledata_v3/NH.Ts+dSST.csv&amp;quot;, skip = 1, na = &amp;quot;***&amp;quot;) skim(weather)  Table 1: Data summary  Name weather  Number of rows 140  Number of columns 19  _______________________   Column type frequency:   numeric 19  ________________________   Group variables None    Variable type: numeric</description>
     </item>
     
