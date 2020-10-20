@@ -105,8 +105,8 @@ disqusShortname = ""
     [[params.tiles.showcase]]
       title = "How did COVID impact bike rentals"
       subtitle = "Analysing Tfl bike data, in the city of London"
-      image = "pic06.jpg"
-      url = "blogs/ipsum"
+      image = "BoJo_TFL.jpg"
+      url = "blogs/Bike"
     # You can make more showcases by copy and pasting the code above
 
   [params.blog]
@@ -121,10 +121,7 @@ disqusShortname = ""
     enable = true
     title = "More about me"
     subtitle = """Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. 
-    Mauris aliquet magna magna sed nunc rhoncus pharetra. 
-    Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. 
-    Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero.
-    Mauris aliquet magna magna sed nunc rhoncus amet pharetra et feugiat tempus."""
+    I was born in the United States in January 1999, more precisely in Livingston New Jersey. During my childhood I grew up between Paris (France) and Princeton (New Jersey). I am reading for the Masters in Financial Analysis degree at London Business School and wish to undertake a career in finance, and more specifically in either Global Capital Markets or in Global Advisory. Feel free to send me an email, or you can reach out on LinkedIn."""
     buttonText = "Get Started"
     url = "blogs"
 

@@ -46,6 +46,8 @@ library(tidyquant)
 
 # Climate change is real 
 
+Lobbies play a crucial role in political campaigns. As a result political candidates and the media paint a biased view on the matter of global warming. As a result the general, uninformed public generate their opinions on misinformation. For this reason, I wanted to reestablish the truth by proving that global warming is an actual current issue.
+
 ```{r, warning=FALSE, message=FALSE}
 weather <- 
   read_csv("https://data.giss.nasa.gov/gistemp/tabledata_v3/NH.Ts+dSST.csv", 
