@@ -7,12 +7,28 @@ description: ""
 draft: false
 image: pic10.jpg
 keywords: ""
-slug: David
-title: Being a Summer Analyst in NYC
+slug: Climate
+title: Climate change is real
 ---
-# Climate change is real!!
 
-```{r load-libraries, echo=FALSE}
+```{r, setup, echo=FALSE}
+knitr::opts_chunk$set(
+  message = FALSE, 
+  warning = FALSE, 
+  tidy=FALSE,     # display code as typed
+  size="small")   # slightly smaller font for code
+options(digits = 3)
+# default figure size
+knitr::opts_chunk$set(
+  fig.width=6.75, 
+  fig.height=6.75,
+  fig.align = "center"
+)
+```
+
+# Climate change is real
+
+```{r load-libraries, warning=FALSE,message=False,echo=FALSE}
  # Load ggplot2, dplyr, and all the other tidyverse packages
 library(tidyverse) 
 library(mosaic)
@@ -29,7 +45,7 @@ library(openintro)
 library(tidyquant)
 ```
 
-```{r}
+```{r, warning=FALSE, message=FALSE}
 weather <- 
   read_csv("https://data.giss.nasa.gov/gistemp/tabledata_v3/NH.Ts+dSST.csv", 
            skip = 1, 
